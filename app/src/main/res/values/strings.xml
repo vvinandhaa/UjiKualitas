@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="headerpage">headerpage</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="uji_kualitas_air">Uji Kualitas Air</string>
+    <string name="tambah_pengujin_baru">Tambah Pengujin Baru</string>
+    <string name="textview">TextView</string>
+    <drawable name="head.png"></drawable>
+</resources>
