@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignLeft="@+id/editText3"
-            android:layout_alignRight="@+id/imageButton"
+            android:layout_alignRight="@+id/imageButton3"
             android:layout_alignStart="@+id/editText3"
             android:layout_below="@+id/editText3"
             android:layout_marginTop="28dp"
