@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".PengujianBaru"></activity>
+        <activity android:name=".PengujianBaru" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".param"></activity>
     </application>
 
 </manifest>
