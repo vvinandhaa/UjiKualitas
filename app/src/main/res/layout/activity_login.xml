@@ -21,58 +21,49 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText4"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_alignLeft="@+id/imageView3"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_alignStart="@+id/imageView3"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_alignLeft="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView5"
-        android:layout_alignTop="@+id/editText2"
-        android:contentDescription="@string/todo"
-        app:srcCompat="@mipmap/usrname" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-
-        android:layout_alignLeft="@+id/imageButton5"
-        android:layout_alignStart="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignStart="@+id/editText4"
         android:layout_below="@+id/imageView3"
-        android:layout_marginTop="102dp"
-        android:contentDescription="@string/todo"
-        app:srcCompat="@mipmap/pass" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_round"
+        android:drawableLeft="@mipmap/usrname"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="14dp"
+        android:textStyle="italic" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText4"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginBottom="208dp"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/todo"
         android:onClick="login"
-        app:srcCompat="@drawable/btn_login" />
+        android:paddingRight="5dp"
+        app:srcCompat="@drawable/btn_lgn" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/imageButton5"
-        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageButton5"
         android:layout_alignRight="@+id/imageButton5"
-        android:layout_alignStart="@+id/imageView3"
-        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignStart="@+id/imageButton5"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_round"
+        android:drawableLeft="@mipmap/pass"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="14dp"
+        android:textStyle="italic" />
 
 </RelativeLayout>
