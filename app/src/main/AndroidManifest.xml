@@ -19,7 +19,11 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PengujianBaru" />
         <activity android:name=".DetailActivity" />
-        <activity android:name=".param"></activity>
+        <activity android:name=".param" />
+        <activity
+            android:name=".EditData"
+            android:label="@string/title_activity_edit_data"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

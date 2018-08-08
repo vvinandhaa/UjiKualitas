@@ -5,21 +5,12 @@
     android:layout_height="match_parent"
     android:layout_weight="1">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/edit1" />
     <LinearLayout
 
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+       >
 
         <TextView
             android:id="@+id/expandedListItem"

@@ -72,8 +72,8 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
-    public void bukaParam(View view) {
-        Intent intent = new Intent(this, param.class);
+    public void EditData(View view) {
+        Intent intent = new Intent(this, EditData.class);
         startActivity(intent);
 
     }

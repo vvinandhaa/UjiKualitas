@@ -63,6 +63,7 @@
             android:layout_marginEnd="11dp"
             android:layout_marginRight="11dp"
             android:background="@android:color/transparent"
+            android:onClick="EditData"
             app:srcCompat="@mipmap/edit" />
 
         <LinearLayout
@@ -301,7 +302,8 @@
             android:paddingBottom="10dp"
             android:text="Parameter Pengujian Kualitas Air"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
 
         <ExpandableListView
             android:id="@+id/expandableListView"
