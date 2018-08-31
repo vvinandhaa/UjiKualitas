@@ -21,6 +21,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_weight="1"
+            android:background="#446CB3"
             android:contentDescription="@string/headerpage"
             app:srcCompat="@drawable/head1"
             tools:ignore="MissingConstraints"
@@ -30,11 +31,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/linearLayout"
-        android:layout_weight="1">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginBottom="5dp">
 
         <EditText
             android:id="@+id/editText3"
@@ -43,8 +48,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="11dp"
-            android:layout_marginStart="11dp"
             android:layout_marginTop="12dp"
             android:layout_toLeftOf="@+id/imageButton2"
             android:layout_toStartOf="@+id/imageButton2"
@@ -63,7 +66,7 @@
             android:layout_alignRight="@+id/imageButton3"
             android:layout_marginEnd="59dp"
             android:layout_marginRight="59dp"
-            android:background="@android:color/transparent"
+            android:background="@drawable/button_spinner"
             android:onClick="detailUji"
             app:srcCompat="@mipmap/src" />
 
@@ -71,45 +74,41 @@
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/imageButton2"
-            android:layout_marginEnd="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@android:color/transparent"
+            android:background="@drawable/button_spinner"
             android:onClick="tambahUji"
             app:srcCompat="@mipmap/add" />
 
-        <TableLayout
+        <Button
+            android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignLeft="@+id/editText3"
-            android:layout_alignRight="@+id/imageButton"
-            android:layout_alignStart="@+id/editText3"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/editText3"
-            android:layout_marginTop="28dp"
-            android:padding="2dp">
+            android:background="@drawable/button_spinner"
+            android:text="REFRESH"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="8dp"/>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible" />
+    </RelativeLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout4">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
-
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progress_bar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true" />-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
 </RelativeLayout>

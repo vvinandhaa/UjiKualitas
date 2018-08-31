@@ -21,8 +21,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_weight="1"
+            android:background="@android:color/background_dark"
             android:contentDescription="@string/headerpage"
-            app:srcCompat="@drawable/head"
+            app:srcCompat="@drawable/head1"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
@@ -101,6 +102,13 @@
 
 
             <TextView
+                android:id="@+id/nmpenguji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:visibility="invisible" />
+
+            <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +116,7 @@
                 android:text="No Pengujian" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/ednomor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -130,7 +138,7 @@
 
 
                 <EditText
-                    android:id="@+id/tgl_pengujian"
+                    android:id="@+id/edtgl_pengujian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -160,14 +168,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Objek / Lokasi" />
+                android:text="Objek " />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/edobject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:text="" />
 
             <TextView
@@ -178,11 +186,11 @@
                 android:text="Rekanan" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/edrekanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:text="" />
 
             <TextView
@@ -193,51 +201,65 @@
                 android:text="Keterangan" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/edket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textMultiLine" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/ecr_at1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pembuatan" />
+
+            <EditText
+                android:id="@+id/edcr_at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penguji" />
+
+            <EditText
+                android:id="@+id/edcr_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/versi1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:text="Versi" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/edversi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:text="" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/lokasi1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:text="Lokasi" />
 
             <EditText
-                android:id="@+id/editText8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="Param" />
-
-            <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/edlokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -245,13 +267,13 @@
                 android:text="" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/buttonadd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                app:srcCompat="@drawable/btn_add"
+                android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"/>
+                app:srcCompat="@drawable/btn_add" />
 
         </LinearLayout>
     </ScrollView>
