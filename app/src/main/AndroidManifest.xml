@@ -3,6 +3,8 @@
     package="com.example.asus.ujikualitas">
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,11 +22,12 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PengujianBaru" />
         <activity android:name=".DetailActivity" />
-        <activity android:name=".param" />
         <activity
             android:name=".EditData"
             android:label="@string/title_activity_edit_data"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UpdateDataActivity" />
+        <activity android:name=".UpdateParamActivity"></activity>
     </application>
 
 </manifest>
