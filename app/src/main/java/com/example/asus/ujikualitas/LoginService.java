@@ -1,7 +1,6 @@
 package com.example.asus.ujikualitas;
 import android.content.Context;
 
-import retrofit2.Call;
 import retrofit2.Callback;
 
 /**

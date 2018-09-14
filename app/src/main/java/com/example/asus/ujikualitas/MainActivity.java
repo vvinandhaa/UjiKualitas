@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
@@ -40,6 +41,8 @@ import static com.example.asus.ujikualitas.ExpandableListDataPump.getData;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    private ImageButton btnLogout;
 
     public static final String key_id = "data_id";
     public static final String key_no_trs = "data_no_trs";
@@ -73,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnLogout = (ImageButton) findViewById(R.id.imageButton3);
+
         ButterKnife.bind(this);
 
         viewAdapter = new RecyclerViewAdapter(this, results);
@@ -82,6 +87,21 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(viewAdapter);
 
         loadData();
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logoutAct();
+
+                Login.start(MainActivity.this);
+                MainActivity.this.finish();
+            }
+        });
+
+    }
+
+    void logoutAct() {
+        PrefUtil.clear(this);
     }
 
     @Override

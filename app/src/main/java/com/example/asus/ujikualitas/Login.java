@@ -19,7 +19,7 @@ import retrofit2.Response;
 public class Login extends AppCompatActivity {
         private EditText UserText;
         private EditText PassText;
-        private Button btn_login;
+        private Button btn_Login;
 
     private LoginService loginService;
 
@@ -40,9 +40,9 @@ public class Login extends AppCompatActivity {
 
         UserText = findViewById(R.id.UserText);
         PassText = findViewById(R.id.PassText);
-        btn_login = findViewById(R.id.btn_login);
+        btn_Login = findViewById(R.id.btn_login);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loginAct();

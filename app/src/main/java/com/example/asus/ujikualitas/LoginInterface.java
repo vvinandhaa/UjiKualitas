@@ -1,6 +1,4 @@
 package com.example.asus.ujikualitas;
-import com.example.asus.ujikualitas.User;
-import com.example.asus.ujikualitas.Config;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
